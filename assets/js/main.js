@@ -94,7 +94,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 2000,
-    reset: true
+    reset: false
 });
 
 sr.reveal(`.home__data, .home__img,
@@ -125,3 +125,21 @@ function moveSlide(step) {
 setInterval(() => {
   moveSlide(1);
 }, 3000); // Troca de imagem a cada 3 segundos
+let customIndex = 0;
+
+function moveCustomSlide(step) {
+  const customSlide = document.querySelector(".custom-carousel-slide");
+  const customItems = document.querySelectorAll(".custom-carousel-item");
+  customIndex += step;
+
+  if (customIndex < 0) {
+    customIndex = customItems.length - 1;
+  } else if (customIndex >= customItems.length) {
+    customIndex = 0;
+  }
+
+  customSlide.style.transform = `translateX(-${customIndex * 220}px)`; // Ajuste conforme o tamanho do item + margem
+}
+
+// Configuração automática
+setInterval(() => moveCustomSlide(1), 3000);

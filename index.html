@@ -29,7 +29,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Serviços</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Planos</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Entre em contato</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"></a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
@@ -43,192 +43,259 @@
 <br>
         <main class="l-main">
             <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <h1 class="home__title">Nome da empresa</h1>
-                        <span class="home__subtitle">Tenha agora mais de 15.000 Conteudos! <br> </span>
-                        <div>
-                            Por apenas R$ 25,00
+            <div class="preto">
+                <div class="carroseu">
+                    <section class="carousel-container">
+                        <div class="carousel-slide">
+                          <img src="assets/img/BannerFutebool.png" alt="Imagem 1">
+                          <!-- <img src="assets/img/Teve.png" alt="Imagem 2"> -->
                         </div>
-                        <br><br>
-                        <a href="#" class="button">Realizar Teste</a>
-
-                    </div>
-    <div class="ImagemTv">
-        
-        <img src="./assets/img/Teve.png" alt=""> 
-
-</div>
-                     <!-- <img src="assets/img/home.png" alt="" class="home__img"> -->
+                        <!-- Botões de navegação -->
+                        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                      </section>
+           
                 </div>
-            </section>
+  
+                <section class="home" id="home">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h1 class="home__title">Nome da empresa</h1>
+                            <span class="home__subtitle">Tenha agora mais de 15.000 Conteudos! <br> </span>
+                            <div>
+                                Por apenas R$ 25,00
+                            </div>
+                            <br><br>
+                            <a href="#" class="button">Fazer o teste gratuito <i class='bx bxl-whatsapp'></i></a>
+    
+                        </div>
+        <div class="ImagemTv">
             
+            <img src="./assets/img/Teve.png" alt=""> 
+    
+    </div>
+                         <!-- <img src="assets/img/home.png" alt="" class="home__img"> -->
+                    </div>
+                
+                </section>
+            </div>
+         
+            <div class="imagemdivididabranco">
+                <img src="./assets/img/PretoEmCima.png" alt="">
+            </div>
+              <div class="branco">
+                <section class="about bd-container" id="about">
+                    <div class="about__container  bd-grid">
+                        <div class="about__data">
+                            <h2 class="h2Branco">Chega de gastar Fortunas em Dinheiro com pessimas operadoras e poucos conteudos da TV</h2>
+                            <br>
+                            <p class="pBranco">Disponível para Smart TV, TV BOX, SMARTPHONE, PC, NOTEBOOK, TABLET e FIRE STICK</p>
+                            <br>
+                            <a href="#" class="button">Faça o teste gratuito <i class='bx bxl-whatsapp'></i></a>
+                        </div>
+    
+                               <img src="./assets/img/Celular.png" alt="">
+                    </div>
+                </section>
+              </div>
             <!--========== ABOUT ==========-->
-            <section class="about section bd-container" id="about">
-                <div class="about__container  bd-grid">
-                    <div class="about__data">
-                        <h2 class="section-title about__initial">Chega de gastar Fortunas em Dinheiro com pessimas operadoras e poucos conteudos da TV</h2>
-                        <p class="about__description">Disponível para Smart TV, TV BOX, SMARTPHONE, PC, NOTEBOOK, TABLET e FIRE STICK</p>
-                        <a href="#" class="button">Entre em contato</a>
-                    </div>
+        
 
-                           <img src="./assets/img/Celular.png" alt="">
-                </div>
-            </section>
-
+      
             <!--========== SERVICES ==========-->
-            <section class="services section bd-container" id="services">
-                <h2 class="section-title">Assista de onde quiser</h2>
-
-                <div class="services__container bd-grid">
-                    <div class="services__content">
-                        <div class="icone">
-                            <i class="service-icon fas fa-tv"></i> <!-- Ícone de TV -->
+            <div class="branco">
+                <section class="services section bd-container" id="services">
+                    <h2 class="section-title">Assista de onde quiser</h2>
+    
+                    <div class="services__container bd-grid">
+                        <div class="services__content">
+                            <div class="icone">
+                                <i class="service-icon fas fa-tv"></i> <!-- Ícone de TV -->
+                            </div>
+                            <h3 class="services__title">Filmes e Séries</h3>
+                            <p class="services__description">Diariamente atualizados.</p>
                         </div>
-                        <h3 class="services__title">Filmes e Séries</h3>
-                        <p class="services__description">Diariamente atualizados.</p>
-                    </div>
-                
-                    <div class="services__content">
-                        <div class="icone">
-                            <i class="service-icon fas fa-video"></i> <!-- Ícone de câmera -->
-                        </div>
-                        <h3 class="services__title">+ de 15 mil conteúdos entre</h3>
-                        <p class="services__description">Canais, Filmes, Séries e Esportes.</p>
-                    </div>
-                
-                    <div class="services__content">
-                        <div class="icone">
-                            <i class="service-icon fa-solid fa-film"></i>
-                                                </div>
-                        <h3 class="services__title">Aproveite todos os conteúdos</h3>
-                        <p class="services__description">100% traduzidos para Português.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--========== MENU ==========-->
-            <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">Conheça</span>
-                <h2 class="section-title">Nossos planos</h2>
-
-                <div class="menu__container bd-grid">
-                    <div class="menu__content">
-                        <h3 class="menu__name">Lorem ipsum dolor </h3>
-                        <br>
-                        <span class="menu__detail">Lorem ipsum dolor sit</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <br>
-                        <span class="menu__preci">Por apenas R$25.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu__content">
-                        <h3 class="menu__name">Lorem ipsum dolor </h3>
-                        <br>
-                        <span class="menu__detail">Lorem ipsum dolor sit</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <br>
-                        <span class="menu__preci">Por apenas R$XX.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
                     
-                    <div class="menu__content">
-                        <h3 class="menu__name">Lorem ipsum dolor </h3>
-                        <br>
-                        <span class="menu__detail">Lorem ipsum dolor sit</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <span class="menu__detail">Lorem ipsum dolor sit.</span>
-                        <br>
-                        <span class="menu__preci">Por apenas R$XX.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <div class="services__content">
+                            <div class="icone">
+                                <i class="service-icon fas fa-video"></i> <!-- Ícone de câmera -->
+                            </div>
+                            <h3 class="services__title">+ de 15 mil conteúdos entre</h3>
+                            <p class="services__description">Canais, Filmes, Séries e Esportes.</p>
+                        </div>
+                    
+                        <div class="services__content">
+                            <div class="icone">
+                                <i class="service-icon fa-solid fa-film"></i>
+                                                    </div>
+                            <h3 class="services__title">Aproveite todos os conteúdos</h3>
+                            <p class="services__description">100% traduzidos para Português.</p>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            <!--===== APP =======-->
-            <section class="app section bd-container">
-                <div class="app__container bd-grid BAS">
-                    <video autoplay muted playsinline controls src="https://video.wixstatic.com/video/0b725a_fadf03af748a459eb3552bf51ffefbfa/720p/mp4/file.mp4"></video>
-                </div>
-            </section>
-            <section class="carousel-container section">
-                <div class="carousel-slide">
-                  <img src="assets/img/Celular.png" alt="Imagem 1">
-                  <img src="assets/img/Teve.png" alt="Imagem 2">
-                </div>
-                <!-- Botões de navegação -->
-                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
-              </section>
-
-            <!--========== CONTACT US ==========-->
-            <section class="contact section bd-container" id="contact">
-                <div class="contact__container bd-grid">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">Contrate agora</span>
-                        <h2 class="section-title contact__initial">Entre em contato</h2>
-                        <p class="contact__description">Trabalhamos todos os dias da semana! Nossa equipe além de preparada recebe treinamentos constantes para melhor atender os clientes.</p>
+                </section>
+            </div>
+      
+            <div class="imagemdivididapreto">
+                <img src="./assets/img/PretoEmBaixo.png" alt="">
+            </div>
+            
+            <div class="preto">
+                <section class="carousel-section section">
+                    <div class="custom-carousel-container">
+                      <div class="custom-carousel-slide">
+                        <div class="custom-carousel-item">
+                          <img src="assets/img/filme1.jpg" alt="Filme 4">
+                          <div class="custom-overlay">
+                            <p>Filme 4</p>
+                          </div>
+                        </div>
+                        <div class="custom-carousel-item">
+                          <img src="assets/img/filme1.jpg" alt="Disney">
+                          <div class="custom-overlay">
+                            <p>Disney</p>
+                          </div>
+                        </div>
+                        <div class="custom-carousel-item">
+                          <img src="assets/img/filme6.jpg" alt="Filme 6">
+                          <div class="custom-overlay">
+                            <p>Filme 6</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="custom-carousel-btn prev" onclick="moveCustomSlide(-1)">&#10094;</button>
+                      <button class="custom-carousel-btn next" onclick="moveCustomSlide(1)">&#10095;</button>
                     </div>
+                  </section>
 
-                    <div class="contact__button">
-                        <a href="#" class="button">Entre em contato</a>
+                  <section class="app section bd-container">
+                    <div class="app__container bd-grid BAS">
+                        <video autoplay muted playsinline controls src="https://video.wixstatic.com/video/0b725a_fadf03af748a459eb3552bf51ffefbfa/720p/mp4/file.mp4"></video>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
 
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Nome da empresa</a>
-                    <span class="footer__description">IPTV</span>
-                    <div>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                    </div>
-                </div>
+    </div>
+    <div class="imagemdivididabranco">
+        <img src="./assets/img/PretoEmCima.png" alt="">
+    </div>
+    
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Servidores dedicados</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Qualidade HD/SD/4K</a></li>
-                        <li><a href="#" class="footer__link">Canais Nacionais</a></li>
-                        <li><a href="#" class="footer__link">Lançamentos</a></li>
-                        <li><a href="#" class="footer__link">Canais Adultos (opcionais)</a></li>
-                    </ul>
-                </div>
+<div class="branco">
+    <section class="menu section bd-container" id="menu">
+        <span class="section-subtitle">Conheça</span>
+        <h2 class="section-title" style="color: black;">Nossos planos</h2>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Melhor custo beneficio</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Desenhos</a></li>
-                        <li><a href="#" class="footer__link">Animes</a></li>
-                        <li><a href="#" class="footer__link">Esportes</a></li>
-                        <li><a href="#" class="footer__link">Reality Show</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Contatos</h3>
-                    <ul>
-                        <li>(Facebook)</li>
-                        <li>(Instagram)</li>
-                        <li>(numero de telefone)</li>
-                        <li>(Email)</li>
-                    </ul>
-                </div>
+        <div class="menu__container bd-grid">
+            <div class="menu__content">
+                <h3 class="menu__name">Lorem ipsum dolor </h3>
+                <br>
+                <span class="menu__detail">Lorem ipsum dolor sit</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <br>
+                <span class="menu__preci">Por apenas R$25.00</span>
+                <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
             </div>
 
-        </footer>
+            <div class="menu__content">
+                <h3 class="menu__name">Lorem ipsum dolor </h3>
+                <br>
+                <span class="menu__detail">Lorem ipsum dolor sit</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <br>
+                <span class="menu__preci">Por apenas R$XX.00</span>
+                <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            
+            <div class="menu__content">
+                <h3 class="menu__name">Lorem ipsum dolor </h3>
+                <br>
+                <span class="menu__detail">Lorem ipsum dolor sit</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <span class="menu__detail">Lorem ipsum dolor sit.</span>
+                <br>
+                <span class="menu__preci">Por apenas R$XX.00</span>
+                <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="contact section bd-container" id="contact">
+        <div class="contact__container bd-grid">
+            <div class="contact__data">
+                <span class="section-subtitle contact__initial">Contrate agora</span>
+                <h2 class="section-title contact__initial">Entre em contato</h2>
+                <p class="contact__description">Trabalhamos todos os dias da semana! Nossa equipe além de preparada recebe treinamentos constantes para melhor atender os clientes.</p>
+            </div>
+
+            <div class="contact__button">
+                <a href="#" class="button">Faça o teste gratuito                      <i class='bx bxl-whatsapp'></i>           </a>
+            </div>
+        </div>
+    </section>
+</div>
+  
+            <!--========== MENU ==========-->
+
+            <!--===== APP =======-->
+
+
+
+            <!--========== CONTACT US ==========-->
+     
+        </main>
+        <div class="preto">
+            <footer class="footer section bd-container">
+                <div class="footer__container bd-grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">Nome da empresa</a>
+                        <span class="footer__description">IPTV</span>
+                        <div>
+                            <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                            <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                            <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                            <a href="#" class="footer__social"><i class='bx bxl-whatsapp'></i></a>
+
+                        </div>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title" style="color: white;">Servidores dedicados</h3>
+                        <ul>
+                            <li><a href="#" class="footer__link">Qualidade HD/SD/4K</a></li>
+                            <li><a href="#" class="footer__link">Canais Nacionais</a></li>
+                            <li><a href="#" class="footer__link">Lançamentos</a></li>
+                            <li><a href="#" class="footer__link">Canais Adultos (opcionais)</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title" style="color: white;">Melhor custo beneficio</h3>
+                        <ul>
+                            <li><a href="#" class="footer__link">Desenhos</a></li>
+                            <li><a href="#" class="footer__link">Animes</a></li>
+                            <li><a href="#" class="footer__link">Esportes</a></li>
+                            <li><a href="#" class="footer__link">Reality Show</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title" style="color: white;">Contatos</h3>
+                        <ul>
+                            <li>(Facebook)</li>
+                            <li>(Instagram)</li>
+                            <li>(numero de telefone)</li>
+                            <li>(Email)</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </footer>
+        </div>
+        <!--========== FOOTER ==========-->
+   
 
         <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>

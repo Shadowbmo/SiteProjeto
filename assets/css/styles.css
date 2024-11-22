@@ -6,14 +6,13 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #0078D4;
-  --first-color-alt: #0063B2;
-  --title-color: #393939;
-  --text-color: #707070;
+  --first-color: #9e43c5; /* Roxo claro */
+  --first-color-alt: #742e92; /* Roxo um pouco mais escuro */
   --text-color-light: #A6A6A6;
-  --body-color: #FBFEFD;
-  --container-color: #FFFFFF;
-
+  --title-color: #E0E6F1;
+  --text-color: #B0C2D4;
+  --body-color: #1A1C2A;
+  --container-color: #262B3A;
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.25rem;
@@ -55,7 +54,7 @@
 .service-icon {
   font-size: 2rem; /* Tamanho do ícone */
   color: white; /* Cor do ícone */
-  background-color: #004080; /* Cor de fundo do círculo */
+  background-color: var(--first-color); /* Cor de fundo do círculo */
   padding: 20px; /* Espaço interno para circular o ícone */
   border-radius: 50%; /* Forma circular */
   display: flex;
@@ -95,15 +94,22 @@ img{
 }
 .carousel-container {
   position: relative;
-  max-width: 800px; /* Limite a largura máxima do carrossel */
   width: 100%; /* Para telas menores, o carrossel ocupará 90% da largura da página */
-  margin: 20px auto; /* Centraliza o carrossel e adiciona espaçamento ao redor */
   overflow: hidden;
   background-color: var(--container-color);
   border-radius: 8px;
+
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para destacar */
 }
-
+.carroseu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  justify-content: center;
+}
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -112,7 +118,7 @@ img{
 
 .carousel-slide img {
   width: 100%; /* Cada imagem ocupa 100% da largura do contêiner */
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   flex-shrink: 0; /* Evita o encolhimento das imagens */
 }
@@ -151,10 +157,8 @@ video {
 }
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --title-color: #E0E6F1;
-  --text-color: #B0C2D4;
-  --body-color: #1A1C2A;
-  --container-color: #262B3A;
+  --first-color: #D72638;
+  --first-color-alt: #A31E2B;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -171,9 +175,7 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
   color: var(--text-color);
-  line-height: 1.6;
 }
 
 h1,h2,h3,p,ul{
@@ -197,6 +199,7 @@ img{
 /*========== CLASS CSS ==========*/
 .section{
   padding: 4rem 0 2rem;
+  
 }
 
 .section-title, .section-subtitle{
@@ -429,7 +432,7 @@ display: flex;}
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--container-color);
+  background-color: #2d303b;
   border-radius: .5rem;
   box-shadow: 0 2px 4px rgba(3,74,40,.15);
   padding: .75rem;
@@ -443,7 +446,7 @@ display: flex;}
 
 .menu__name, .menu__preci{
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: white !important;
 }
 
 .menu__name{
@@ -452,6 +455,7 @@ display: flex;}
 
 .menu__detail, .menu__preci{
   font-size: var(--small-font-size);
+  color: white;
 }
 
 .menu__detail{
@@ -525,7 +529,7 @@ display: flex;}
 
 .footer__title{
   font-size: var(--h2-font-size);
-  color: var(--title-color);
+  color: white !important;
   margin-bottom: var(--mb-2);
 }
 
@@ -650,4 +654,121 @@ display: flex;}
     .home__container {
         height: 640px;
     }
+}
+
+
+.custom-carousel-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.custom-carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-item {
+  position: relative;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.custom-carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.custom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+.custom-carousel-item:hover .custom-overlay {
+  opacity: 1;
+}
+
+.custom-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.custom-carousel-btn.prev {
+  left: 10px;
+}
+
+.custom-carousel-btn.next {
+  right: 10px;
+}
+
+.branco{
+  background-color: #F2F4F8;
+  width: 100%;
+  color: #1A1C2A !important;
+padding-top: 50px;
+padding-bottom: 50px;
+
+
+}
+
+.preto{
+  background-color: #262B3A;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.brancoBd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+
+}
+.branco h2,h3,h4{
+  font-size: 10;
+  font-weight: bold;
+  color: black !important;
+}
+.h2Branco{
+  font-weight: bold;
+}
+
+.pBranco{
+  font-size: 10;
+font-weight: 500;}
+
+.preto h2,h3,h4{
+  color: white;
+}
+
+.imagemdivididabranco{
+  background-color: #F2F4F8;
+}
+
+
+.imagemdivididapreto{
+  background-color: #262B3A;
 }
